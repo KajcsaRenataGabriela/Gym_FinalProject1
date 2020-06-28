@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CreateDiet">
+   <children>
+      <TextField fx:id="nameTextField" layoutX="46.0" layoutY="96.0" prefHeight="32.0" prefWidth="158.0" promptText="Diet name" />
+      <Button fx:id="createButton" layoutX="230.0" layoutY="300.0" mnemonicParsing="false" onAction="#onCreate" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: #262626;" text="Create" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="533.0" layoutY="360.0" mnemonicParsing="false" onAction="#onBack" prefHeight="32.0" prefWidth="52.0" style="-fx-background-color: #262626;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="46.0" layoutY="21.0" text="Create a Diet" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="failMessage" layoutX="154.0" layoutY="349.0" text="Please fill all fields in order to crate a diet!" textFill="RED" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="successMessage" layoutX="210.0" layoutY="360.0" text="Diet successfully registered!" textFill="#08cf23" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="descriptionTextArea" layoutX="46.0" layoutY="164.0" prefHeight="127.0" prefWidth="532.0" />
+      <Label layoutX="46.0" layoutY="144.0" text="Diet description:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="76.0" text="Diet name:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

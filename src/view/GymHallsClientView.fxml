@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GymHallsClient">
+   <children>
+      <Button fx:id="backButton" layoutX="511.0" layoutY="343.0" mnemonicParsing="false" onAction="#onBack" style="-fx-background-color: #262626;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/fitnessHall.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="133.0" fitWidth="200.0" layoutX="401.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/forceHall.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="133.0" fitWidth="199.0" layoutX="200.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/swimmingPoolHall.jpg" />
+         </image></ImageView>
+      <Label layoutX="70.0" layoutY="156.0" text="Fitness" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="467.0" layoutY="156.0" text="Force Hall" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="156.0" text="Swimming Pool" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="254.0" text="Choose your Gym Hall:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="chooseGymHall" layoutX="250.0" layoutY="251.0" prefWidth="150.0" />
+      <Button fx:id="submitButton" layoutX="455.0" layoutY="247.0" mnemonicParsing="false" onAction="#onSubmit" style="-fx-background-color: #262626;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="successMessage" layoutX="221.0" layoutY="343.0" text="Submitted succesfully!" textFill="#3cf81a" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="failMessage" layoutX="210.0" layoutY="331.0" text="Choose a Gym Hall First!" textFill="RED" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

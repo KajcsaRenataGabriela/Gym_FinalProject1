@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Client">
+   <children>
+      <Button fx:id="chooseTrainerButton" layoutX="214.0" layoutY="98.0" mnemonicParsing="false" onAction="#onChooseTrainer" style="-fx-background-color: #262626;" text="Choose a Trainer" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font></Button>
+      <Button fx:id="chooseGymHallButton" layoutX="210.0" layoutY="33.0" mnemonicParsing="false" onAction="#onChooseGymHall" style="-fx-background-color: #262626;" text="Choose Gym Hall" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="giveFeedbackButton" layoutX="150.0" layoutY="293.0" mnemonicParsing="false" onAction="#onGiveFeedback" style="-fx-background-color: #262626;" text="Give Feedback for Your Trainer" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewDietButton" layoutX="219.0" layoutY="161.0" mnemonicParsing="false" onAction="#onViewDiet" style="-fx-background-color: #262626;" text="View Your Diet" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="beginWorkoutButton" layoutX="219.0" layoutY="230.0" mnemonicParsing="false" onAction="#onBeginWorkout" style="-fx-background-color: #262626;" text="Begin Workout" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="486.0" layoutY="347.0" mnemonicParsing="false" onAction="#onBack" style="-fx-background-color: #262626;" text="Sign out" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

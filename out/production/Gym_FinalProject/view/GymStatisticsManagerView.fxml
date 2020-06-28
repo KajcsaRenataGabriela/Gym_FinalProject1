@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GymStatisticsManager">
+   <children>
+      <Button fx:id="backButton" layoutX="519.0" layoutY="358.0" mnemonicParsing="false" onAction="#onBackButton" style="-fx-background-color: #262626;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableView" layoutX="31.0" layoutY="32.0" prefHeight="318.0" prefWidth="539.0">
+        <columns>
+          <TableColumn fx:id="columnClients" text="Client" />
+            <TableColumn fx:id="columnGym" prefWidth="92.0" text="Gym" />
+          <TableColumn fx:id="columnTrainers" prefWidth="85.0" text="Trainer" />
+            <TableColumn fx:id="columnExercises" prefWidth="96.0" text="Exercise" />
+            <TableColumn fx:id="columnEquipment" prefWidth="100.0" text="Equipment" />
+            <TableColumn fx:id="columnDiet" prefWidth="85.0" text="Diet" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

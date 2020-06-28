@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="401.0" maxWidth="611.0" minHeight="400.0" minWidth="600.0" prefHeight="401.0" prefWidth="611.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Login">
+   <children>
+      <AnchorPane prefHeight="401.0" prefWidth="611.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="loginButton" layoutX="194.0" layoutY="293.0" mnemonicParsing="false" onAction="#onActionLogin" prefHeight="48.0" prefWidth="222.0" style="-fx-background-color: #262626;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="26.0" />
+               </font>
+            </Button>
+            <Label layoutX="206.0" layoutY="14.0" text="Welcome!" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="42.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" layoutX="206.0" layoutY="173.0" prefHeight="40.0" prefWidth="198.0" promptText="Username" />
+            <Button fx:id="toSignUpButton" layoutX="389.0" layoutY="355.0" mnemonicParsing="false" onAction="#onToSignUpButton" prefHeight="26.0" prefWidth="207.0" style="-fx-background-color: #262626;" text="or press here to sign up" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Button>
+            <ChoiceBox fx:id="choiceBoxRole" layoutX="280.0" layoutY="117.0" prefHeight="26.0" prefWidth="198.0" />
+            <PasswordField fx:id="passwordTextField" layoutX="205.0" layoutY="233.0" prefHeight="40.0" prefWidth="198.0" promptText="Password" />
+            <Label layoutX="145.0" layoutY="120.0" text="Choose your role!" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblMessage" layoutX="165.0" layoutY="76.0" prefHeight="22.0" prefWidth="282.0" text="Wrong username or password!" textFill="#da1414" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblMessageChooseRole" layoutX="231.0" layoutY="76.0" prefHeight="22.0" prefWidth="121.0" text="Choose a role!" textFill="#da1414" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

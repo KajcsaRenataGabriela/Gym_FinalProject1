@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WorkoutInProgress">
+   <children>
+      <Label layoutX="27.0" layoutY="165.0" text="Exercise description:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="134.0" text="Exercise duration:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="104.0" text="Exercise name:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="endWorkoutButton" layoutX="223.0" layoutY="322.0" mnemonicParsing="false" onAction="#onEndWorkout" style="-fx-background-color: #262626;" text="End Workout!" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Button>
+      <Label fx:id="failMessage" layoutX="203.0" layoutY="363.0" text="Equipment currently not available" textFill="RED" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="successMessage" layoutX="169.0" layoutY="363.0" text="Equipment available! You can start your exercise!" textFill="#00dd1a" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameDietLabel" layoutX="150.0" layoutY="106.0" text="-you don't have an assigned exercise yet-" textFill="#52bde1">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="durationDietLabel" layoutX="165.0" layoutY="136.0" text="-you don't have an assigned exercise yet-" textFill="#52bde1">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="descriptionDietLabel" layoutX="183.0" layoutY="167.0" text="-you don't have an assigned exercise yet-" textFill="#52bde1">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="191.0" layoutY="25.0" text="WORKOUT IN PROGRESS" textFill="RED">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gym_FinalProject">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$" />
+      <root url="jar://$USER_HOME$/Desktop/JPA/eclipselink.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/JPA/jakarta.persistence_2.2.3.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/JPA/org.eclipse.persistence.jpa.modelgen_2.7.7.v20200504-69f2c2b80d.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/JPA/org.eclipse.persistence.jpars_2.7.7.v20200504-69f2c2b80d.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src" />
+      <root url="jar://$USER_HOME$/Desktop/JPA/jakarta.persistence.source_2.2.3.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/JPA/org.eclipse.persistence.jpa.modelgen.source_2.7.7.v20200504-69f2c2b80d.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/JPA/org.eclipse.persistence.jpars.source_2.7.7.v20200504-69f2c2b80d.jar!/" />
+    </SOURCES>
+  </library>
+</component>

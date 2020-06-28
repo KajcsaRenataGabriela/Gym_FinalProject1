@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HandleClients">
+   <children>
+      <ChoiceBox fx:id="selectClient" layoutX="290.0" layoutY="193.0" prefHeight="31.0" prefWidth="155.0" />
+      <Label layoutX="190.0" layoutY="199.0" text="Select a client:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="assignButton" layoutX="263.0" layoutY="317.0" mnemonicParsing="false" onAction="#onAssignButton" style="-fx-background-color: #262626;" text="Assign!" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="519.0" layoutY="358.0" mnemonicParsing="false" onAction="#onBackButton" style="-fx-background-color: #262626;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="139.0" layoutY="236.0" text="Assign him/her a diet:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="273.0" text="Assign him/her an exercise:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="selectDiet" layoutX="290.0" layoutY="230.0" prefHeight="31.0" prefWidth="155.0" />
+      <ChoiceBox fx:id="selectExercise" layoutX="290.0" layoutY="267.0" prefHeight="31.0" prefWidth="155.0" />
+      <Label fx:id="failMessage" layoutX="263.0" layoutY="363.0" text="Complete all fields!" textFill="RED" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="successMessage" layoutX="204.0" layoutY="363.0" text="Diet and exercise successfully assigned!" textFill="#00da12" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="30.0" text="Number of new requests:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="numberOfRequestsLabel" layoutX="229.0" layoutY="30.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="5.0" layoutY="145.0" prefHeight="5.0" prefWidth="592.0" />
+      <Label layoutX="29.0" layoutY="85.0" text="List of Clients:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="selectPendingClient" layoutX="145.0" layoutY="80.0" prefHeight="31.0" prefWidth="155.0" />
+      <Button fx:id="acceptNewClient" layoutX="381.0" layoutY="75.0" mnemonicParsing="false" onAction="#onAcceptNewClient" style="-fx-background-color: #262626;" text="Accept new client" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Button>
+      <Label fx:id="failReqMessage" layoutX="145.0" layoutY="122.0" text="Select a client!" textFill="RED" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="successReqMessage" layoutX="145.0" layoutY="122.0" text="Accepted!" textFill="#00dd1a" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

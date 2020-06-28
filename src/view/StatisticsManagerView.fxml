@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StatisticsManager">
+   <children>
+      <ChoiceBox fx:id="selectGymHall" layoutX="146.0" layoutY="26.0" prefHeight="31.0" prefWidth="155.0" />
+      <Label layoutX="18.0" layoutY="33.0" text="Select a gym hall:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="clickToDisplayButton" layoutX="460.0" layoutY="31.0" mnemonicParsing="false" onAction="#onClickToDisplay" style="-fx-background-color: #262626;" text="Click to display!" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableViewTrainers" layoutX="29.0" layoutY="90.0" prefHeight="259.0" prefWidth="117.0" style="-fx-background-color: black;">
+        <columns>
+          <TableColumn fx:id="columnTrainers" prefWidth="116.0" text="Trainers" />
+        </columns>
+      </TableView>
+      <Button fx:id="backButton" layoutX="519.0" layoutY="358.0" mnemonicParsing="false" onAction="#onBackButton" style="-fx-background-color: #262626;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableViewClients" layoutX="161.0" layoutY="90.0" prefHeight="259.0" prefWidth="117.0" style="-fx-background-color: black;">
+         <columns>
+            <TableColumn fx:id="columnClients" prefWidth="116.0" text="Clients" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tableViewExercises" layoutX="292.0" layoutY="90.0" prefHeight="259.0" prefWidth="117.0" style="-fx-background-color: black;">
+         <columns>
+            <TableColumn fx:id="columnExercises" prefWidth="116.0" text="Exercises" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tableViewEquipment" layoutX="428.0" layoutY="90.0" prefHeight="259.0" prefWidth="117.0" style="-fx-background-color: black;">
+         <columns>
+            <TableColumn fx:id="columnEquipment" prefWidth="116.0" text="Epuipment" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

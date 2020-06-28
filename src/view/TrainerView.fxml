@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Trainer">
+   <children>
+      <Button fx:id="createDietButton" layoutX="229.0" layoutY="72.0" mnemonicParsing="false" onAction="#onCreateDiet" style="-fx-background-color: #262626;" text="Create a diet" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateProfileButton" layoutX="223.0" layoutY="140.0" mnemonicParsing="false" onAction="#onUpdateProfile" style="-fx-background-color: #262626;" text="Update Profile" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="createExerciseButton" layoutX="186.0" layoutY="200.0" mnemonicParsing="false" onAction="#onCreateExercise" style="-fx-background-color: #262626;" text="Create an exercise plan" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="handleClientsButton" layoutX="223.0" layoutY="266.0" mnemonicParsing="false" onAction="#onHandleClients" style="-fx-background-color: #262626;" text="Handle Clients" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="507.0" layoutY="350.0" mnemonicParsing="false" onAction="#onBack" style="-fx-background-color: #262626;" text="Sign out" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

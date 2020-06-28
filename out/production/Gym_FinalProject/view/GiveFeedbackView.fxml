@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GiveFeedback">
+   <children>
+      <Button fx:id="backButton" layoutX="534.0" layoutY="359.0" mnemonicParsing="false" onAction="#onBack" style="-fx-background-color: #262626;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="feedbackTextField" layoutX="31.0" layoutY="112.0" prefHeight="200.0" prefWidth="556.0" />
+      <Button fx:id="submitButton" layoutX="255.0" layoutY="320.0" mnemonicParsing="false" onAction="#onSubmit" style="-fx-background-color: #262626;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="31.0" layoutY="80.0" text="Give your trainer a feedback:" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="31.0" text="Rate your trainer:" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="ratingChoiceBox" layoutX="172.0" layoutY="29.0" prefWidth="150.0" />
+      <Label fx:id="successLabel" layoutX="185.0" layoutY="362.0" text="Feedback successfully registered!" textFill="#1dc914" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="failLabel" layoutX="153.0" layoutY="362.0" text="In order to give feedback, please fill all fields!" textFill="#c71414" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="failTrainerLabel" layoutX="110.0" layoutY="362.0" text="You don't have a trainer. You can't give feedback yet!" textFill="#c71414" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

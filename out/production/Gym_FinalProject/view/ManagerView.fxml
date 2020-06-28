@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Manager">
+   <children>
+      <Button fx:id="registerTrainer" layoutX="213.0" layoutY="182.0" mnemonicParsing="false" onAction="#onRegisterTrainer" style="-fx-background-color: #262626;" text="Register a Trainer" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="gymHallsButton" layoutX="219.0" layoutY="248.0" mnemonicParsing="false" onAction="#onGymHalls" style="-fx-background-color: #262626;" text="Trainer Statistics" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="statisticsButton" layoutX="162.0" layoutY="113.0" mnemonicParsing="false" onAction="#onStatistics" style="-fx-background-color: #262626;" text="Statistics/Details about Gym Halls" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="490.0" layoutY="350.0" mnemonicParsing="false" onAction="#onBack" style="-fx-background-color: #262626;" text="Sign out" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="clientStatisticsButton" layoutX="225.0" layoutY="55.0" mnemonicParsing="false" onAction="#onClientStatistics" style="-fx-background-color: #262626;" text="Client Statistics" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

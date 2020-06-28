@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TrainerStatisticsManager">
+   <children>
+      <Button fx:id="backButton" layoutX="521.0" layoutY="355.0" mnemonicParsing="false" onAction="#onBack" style="-fx-background-color: #262626;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="18.0" text="Select Trainer:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="selectTrainerChoiceBox" layoutX="149.0" layoutY="18.0" prefWidth="150.0" />
+      <Button fx:id="clickToDisplayTrainerButton" layoutX="406.0" layoutY="41.0" mnemonicParsing="false" onAction="#onClickToDisplayTrainer" style="-fx-background-color: #262626;" text="Click to display!" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableViewFeedback" layoutX="20.0" layoutY="218.0" prefHeight="135.0" prefWidth="558.0" style="-fx-background-color: black;">
+         <columns>
+            <TableColumn fx:id="columnFeedback" prefWidth="556.0" text="Feedback on selected month" />
+         </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="126.0" text="Rating:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="175.0" text="Total working hours:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="62.0" text="Select Month:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="selectMonthChoiceBox" layoutX="149.0" layoutY="57.0" prefWidth="150.0" />
+      <Label fx:id="ratingLabel" layoutX="85.0" layoutY="126.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalWorkingHoursLabel" layoutX="205.0" layoutY="175.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <Separator layoutX="4.0" layoutY="110.0" prefHeight="1.0" prefWidth="592.0" />
+      <Label fx:id="failMessage" layoutX="369.0" layoutY="80.0" text="Select both a trainer and a month!" textFill="RED" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

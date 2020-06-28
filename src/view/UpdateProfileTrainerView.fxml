@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="401.0" maxWidth="611.0" minHeight="400.0" minWidth="600.0" prefHeight="401.0" prefWidth="611.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UpdateProfileTrainer">
+   <children>
+      <AnchorPane prefHeight="401.0" prefWidth="611.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="savePictureButton" layoutX="203.0" layoutY="271.0" mnemonicParsing="false" onAction="#onSavePicture" prefHeight="48.0" prefWidth="178.0" style="-fx-background-color: #262626;" text="Save picture" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="26.0" />
+               </font>
+            </Button>
+            <Label layoutX="145.0" layoutY="21.0" text="Update your profile!" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="42.0" />
+               </font>
+            </Label>
+            <TextField fx:id="linkTextField" layoutX="22.0" layoutY="181.0" prefHeight="40.0" prefWidth="138.0" promptText="Insert link here" />
+            <Button fx:id="backButton" layoutX="535.0" layoutY="355.0" mnemonicParsing="false" onAction="#onBack" prefHeight="32.0" prefWidth="62.0" style="-fx-background-color: #262626;" text="back" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="passwordTextField" layoutX="430.0" layoutY="181.0" prefHeight="40.0" prefWidth="156.0" promptText="Password" />
+            <Label layoutX="231.0" layoutY="105.0" text="Set a profile picture" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblMessage" layoutX="165.0" layoutY="76.0" prefHeight="22.0" prefWidth="282.0" text="Wrong username or password!" textFill="#da1414" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblMessageChooseRole" layoutX="231.0" layoutY="76.0" prefHeight="22.0" prefWidth="121.0" text="Choose a role!" textFill="#da1414" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="197.0" layoutY="87.0" orientation="VERTICAL" prefHeight="268.0" prefWidth="6.0" />
+            <Label layoutX="9.0" layoutY="105.0" text="Set a link to your video" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Label>
+            <Separator layoutX="395.0" layoutY="87.0" orientation="VERTICAL" prefHeight="268.0" prefWidth="6.0" />
+            <Button fx:id="saveLinkButton" layoutX="19.0" layoutY="271.0" mnemonicParsing="false" onAction="#onSaveLink" prefHeight="48.0" prefWidth="144.0" style="-fx-background-color: #262626;" text="Save link" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="26.0" />
+               </font>
+            </Button>
+            <Label layoutX="436.0" layoutY="105.0" text="Update password" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="updatePasswordButton" layoutX="399.0" layoutY="271.0" mnemonicParsing="false" onAction="#onUpdatePassword" prefHeight="48.0" prefWidth="199.0" style="-fx-background-color: #262626;" text="Update password" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="23.0" />
+               </font>
+            </Button>
+            <Label fx:id="linkLabel" layoutX="53.0" layoutY="325.0" text="Link saved" textFill="#05d00c" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="pictureLabel" layoutX="244.0" layoutY="325.0" text="Picture saved" textFill="#05d00c" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordLabel" layoutX="432.0" layoutY="325.0" text="Password updated" textFill="#05d00c" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pictureTextField" layoutX="223.0" layoutY="181.0" prefHeight="40.0" prefWidth="138.0" promptText="Insert link here" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
