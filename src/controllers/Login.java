@@ -10,10 +10,11 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
-import java.io.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -46,7 +47,6 @@ public class Login implements Initializable {
     private DBHandler handler;
     private Connection connection;
     private PreparedStatement pst;
-    private String userId;
 
     @FXML
     void onToSignUpButton() throws Exception {
@@ -68,14 +68,6 @@ public class Login implements Initializable {
     void writeInFile(String userId){
         File f = new File("current_user.txt");
 
-        if(f.exists()){
-            f.delete();
-            try {
-                f.createNewFile();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
         FileWriter fr = null;
         BufferedWriter br = null;
 
@@ -89,6 +81,7 @@ public class Login implements Initializable {
             e.printStackTrace();
         }finally{
             try {
+                assert br != null;
                 br.close();
                 fr.close();
             } catch (IOException e) {
@@ -247,14 +240,6 @@ public class Login implements Initializable {
 
                     File f = new File("current_user.txt");
 
-                    if(f.exists()){
-                        f.delete();
-                        try {
-                            f.createNewFile();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    }
                     FileWriter fr = null;
                     BufferedWriter br = null;
                     String userId = null;
@@ -275,12 +260,14 @@ public class Login implements Initializable {
                         fr = new FileWriter(f);
                         br = new BufferedWriter(fr);
 
+                        assert userId != null;
                         br.write(userId);
 
                     } catch (IOException e) {
                         e.printStackTrace();
                     }finally{
                         try {
+                            assert br != null;
                             br.close();
                             fr.close();
                         } catch (IOException e) {

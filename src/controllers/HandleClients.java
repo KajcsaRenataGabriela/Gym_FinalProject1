@@ -42,9 +42,6 @@ public class HandleClients implements Initializable {
     private Button backButton;
 
     @FXML
-    private Button assignButton;
-
-    @FXML
     private Label successMessage;
 
     @FXML
@@ -52,9 +49,6 @@ public class HandleClients implements Initializable {
 
     @FXML
     private Label numberOfRequestsLabel;
-
-    @FXML
-    private Button acceptNewClient;
 
     @FXML
     private Label successReqMessage;

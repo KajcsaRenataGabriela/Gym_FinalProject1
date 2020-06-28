@@ -210,7 +210,6 @@ public class ChooseTrainer implements Initializable {
                 }
                 //Here I display his profile picture
                 String pictureTrainerQuery = "SELECT pictureTrainer FROM trainer WHERE idTrainer=?";
-//                boolean backgroundLoading=true;
                 pst = connection.prepareStatement(pictureTrainerQuery);
                 pst.setString(1, selectedTrainerId);
                 ResultSet rsPictureTrainer = pst.executeQuery();
@@ -320,13 +319,13 @@ public class ChooseTrainer implements Initializable {
         columnTrainer.setCellValueFactory(new PropertyValueFactory<>("Something"));
         try {
             populateTable();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
         }
         try {
             populateChoiceBox();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
         }
 
     }

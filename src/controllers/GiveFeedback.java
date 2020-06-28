@@ -124,7 +124,12 @@ public class GiveFeedback implements Initializable {
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
-                rating = (rating + ratingFromChoiceBox) / 2;
+                if(rating==0){
+                    rating=ratingFromChoiceBox;
+                }
+                else {
+                    rating = (rating + ratingFromChoiceBox) / 2;
+                }
                 // Here I update his rating
                 String updateQuery = "UPDATE trainer SET ratingTrainer = ? WHERE idTrainer = ?";
                 PreparedStatement ps = connection.prepareStatement(updateQuery);

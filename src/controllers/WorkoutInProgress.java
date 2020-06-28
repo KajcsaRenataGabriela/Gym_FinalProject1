@@ -115,13 +115,6 @@ public class WorkoutInProgress implements Initializable {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        String findCurrentUsersGymIdQuery = "SELECT fk_idGymHall FROM client WHERE idClient=?";
-        pst = connection.prepareStatement(findCurrentUsersGymIdQuery);
-        pst.setString(1, currentUserId);
-        ResultSet rsFindCurrentUsersGymId = pst.executeQuery();
-        while (rsFindCurrentUsersGymId.next()) {
-            String currentUsersGymId = rsFindCurrentUsersGymId.getString("fk_idGymHall");
-        }
 
         //Find current clients's exercise's name
         String findExerciseNameQuery = "SELECT nameExercise FROM exerciseinfo INNER JOIN client ON exerciseinfo.idExercise=fk_idExerciseClient WHERE idClient=?";
